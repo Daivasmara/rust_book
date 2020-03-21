@@ -29,6 +29,10 @@ fn main() {
                                                    // therefore string in rust doesn't support indexing, because it's unsafe
     println!("len1: {}, len2: {}", len1, len2); // prove that len2 is 24 bytes long
 
+    // therefore we need to use range
+    let hello = "hello world";
+    let _s = &hello[0..4];
+
     // Another point about UTF-8 is that there are 3 relevant ways to look at strings from rust's
     // perspective: bytes, scalar values, and grapheme clusters (the closest thing to letters)
 
